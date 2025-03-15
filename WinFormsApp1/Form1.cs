@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -27,5 +29,20 @@ namespace WinFormsApp1
             string userInput = textBox1.Text;
             MessageBox.Show("Вы ввели: " + userInput, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void MainForm_DoubleClick(object sender, EventArgs e)
+        {
+            clickLabel.Visible = true;
+            var newvar = new NewClass();
+            newvar.Name = "";
+        }
+
+
     }
 }
