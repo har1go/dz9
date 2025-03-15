@@ -19,6 +19,11 @@ namespace WinFormsApp1
             Name = name;
         }
 
+        public void DoSomething()
+        {
+            //здесь что-то происходит
+        }
+
 
     }
 }
